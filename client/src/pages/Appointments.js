@@ -71,6 +71,9 @@ const Appointments = () => {
   return (
     <Layout>
       <h1>Appointments Lists</h1>
+      <p>Upcoming Appointments</p>
+      {/* <DisplayAppointment /> */}
+      <p>Previous Appointments</p>
       <DisplayAppointment />
       {/* <Table columns={columns} dataSource={appointments} /> */}
     </Layout>
