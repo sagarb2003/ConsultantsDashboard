@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Layout from "./../components/Layout";
 import moment from "moment";
-import { Table } from "antd";
+// import { Table } from "antd";
 import PreviousAppointment from "../components/PreviousAppointment";
+import UpcomingAppointment from "../components/UpcomingAppointment";
 
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -65,9 +66,9 @@ const Appointments = () => {
   return (
     <Layout>
       <h1>Appointments Lists</h1>
-      <p>Upcoming Appointments</p>
-      {/* <DisplayAppointment /> */}
-      <p>Previous Appointments</p>
+      <h4 style={{ textAlign: "center" }}>Upcoming Appointments</h4>
+      <UpcomingAppointment />
+      <h4 style={{ textAlign: "center" }}>Previous Appointments</h4>
       <PreviousAppointment />
       {/* <Table columns={columns} dataSource={appointments} /> */}
     </Layout>

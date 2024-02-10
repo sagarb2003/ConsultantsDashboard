@@ -6,7 +6,6 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 
-
 const UpcomingAppointment = () => {
   return (
     <>
@@ -31,7 +30,8 @@ const UpcomingAppointment = () => {
               textAlign: "justify",
             }}
           >
-           Appointment on 10/2/24 at 5:45 P.M
+            Appointment on 10/2/24 at 5:45 P.M
+            {/* <a href="http://localhost:3000/">Video Call</a> */}
             <Button
               variant="contained"
               sx={{
@@ -55,6 +55,7 @@ const UpcomingAppointment = () => {
           </AccordionSummary>
           <AccordionDetails>
             Appointment on 10/2/24 at 4:30 P.M.
+            {/* <a href="http://localhost:3000/">Video Call</a> */}
             <Button
               variant="contained"
               sx={{ backgroundColor: "#4caf50", marginLeft: "21px" }}
@@ -74,6 +75,7 @@ const UpcomingAppointment = () => {
           </AccordionSummary>
           <AccordionDetails>
             Appointment on 11/2/24 at 5:25 P.M
+            {/* <a href="http://localhost:3000/">Video Call</a> */}
             <Button
               variant="contained"
               sx={{ backgroundColor: "#4caf50", marginLeft: "21px" }}
